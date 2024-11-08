@@ -9,7 +9,8 @@
     <style>
         @media only screen and (min-width: 1000px){
             .FixedPosition{
-                position: fixed;
+                position: sticky;
+                top:0;
             }
         }
     </style>
@@ -19,50 +20,56 @@
         <div class="row mt-3">
             <!--Profile Card-->
             <div class="col-xl-4 g-0 pe-xl-2 mb-3">
-                <div class="card p-2 pt-3 rounded-3 d-flex">
-                    <div class="row pb-3">
-                        <div class="col-lg-3 text-center align-content-center">
-                            <img
-                                src="https://staff-medisync.web.app/assets/images/placeholders/default-user.png"
-                                style="aspect-ratio: 1/1; object-fit: cover; width: 90px"
-                                class="rounded-circle ms-2 me-3 align-items-md-center"
-                              />
-                        </div>
-                        <div class="col-lg-9">
-                                <div class="Name fs-4 fw-bold text-lg-start text-center pt-3" > 
-                                Patient Name Kurt Christian De Leon
+                <div class="FixedPosition">
+                    <div class="card p-2 pt-3 rounded-3 d-flex">
+                        <div class="row pb-3">
+                            <div class="col-lg-3 text-center align-content-center">
+                                <img
+                                    src="https://staff-medisync.web.app/assets/images/placeholders/default-user.png"
+                                    style="aspect-ratio: 1/1; object-fit: cover; width: 90px"
+                                    class="rounded-circle ms-2 me-3 align-items-md-center"
+                                  />
                             </div>
-                                <div class="text-lg-start text-center pb-2">Active</div>
-                        </div>
-                        </div>
-                    <div class="card p-2 m-1 rounded-3">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                    <span class="fw-bold fs-5">Patient Information</span><br>
-                                    <span class="fs-6">Username:</span><br>
-                                    <span class="fs-6">Gender:Male</span><br>
-                                    <span class="fs-6">Birthday: Aug 10, 2002</span><br>
-                                    <span class="fs-6">Age:</span><br>
-                                    <span class="fs-6">Family ID:</span><br>
-                                    <span class="fs-6">UserID:</span><br>
-                                    
-                                </li>           
+                            <div class="col-lg-9">
+                                    <div class="Name fs-4 fw-bold text-lg-start text-center pt-3" > 
+                                    Patient Name
+                                </div>
+                                    <div class="text-lg-start text-center pb-2">Active</div>
+                            </div>
+                            </div>
+                        <div class="card p-2 m-1 rounded-3">
+                            <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <span class="fw-bold fs-5">Contact Information</span><br>
-                                    <span class="">0909090909</span><br>
-                                    <span class="">unavailable</span><br>
-                                </li>
-                                <li class="list-group-item">
-                                    <span class="fw-bold fs-5">Contacts</span><br>
-                                    <span class="">Name:</span><br>
-                                    <span class="">Phone Number:</span><br>
-                                </li>          
-                                </ul>
-                        </div>  
+                                        <span class="fw-bold fs-5">Patient Information</span><br>
+                                        <span class="fs-6">Username:</span><br>
+                                        <span class="fs-6">Gender: Male</span><br>
+                                        <span class="fs-6">Birthday: Aug 10, 2002</span><br>
+                                        <span class="fs-6">Age:</span><br>
+                                        <span class="fs-6">Family ID:</span><br>
+                                        <span class="fs-6">UserID:</span><br>
+                                        
+                                    </li>           
+                                    <li class="list-group-item">
+                                        <span class="fw-bold fs-5">Contact Information</span><br>
+                                        <span class=""><i class="fa-solid fa-phone"></i> 0909090909</span><br>
+                                        <span class=""><i class="fa-regular fa-envelope"></i> unavailable</span><br>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="fw-bold fs-5">Contacts</span>
+                                        <div class="border border-2 p-2 rounded-4 mt-3">
+                                            <div class="">Name:</div>
+                                            <div class="">Phone Number:</div>
+                                        </div>
+                                        
+                                          </li>          
+                                    </ul>
+                            </div>  
+                    </div>
+                    <div class="card border border-0 bg-secondary-subtle pt-1">
+                        <button type="button" class="btn btn-primary rounded-3"><i class="fa-solid fa-qrcode"></i> Generate QR Code</button>
+                    </div>
                 </div>
-                <div class="card border border-0 bg-secondary-subtle pt-1">
-                    <button type="button" class="btn btn-primary "><i class="fa-solid fa-qrcode"></i> Generate QR Code</button>
-                </div>
+                
 
             </div>
             
@@ -146,55 +153,64 @@
                                     <div class="row">
                                         <div class="col-11 card rounded-4 p-2 text-start border border-2 bg-success-subtle border-success-subtle">
                                             <div class="row">
-                                                <div class="col-9 pe-0">
+                                                <div class="col-9 pe-0 d-grid">
                                                     <div class="row m-0">
                                                         <div class="card">     
                                                             <div class="row">
                                                                 <div class="col-3 align-content-center ps-1">
                                                                     <img
                                                                     src="https://staff-medisync.web.app/assets/images/placeholders/default-user.png"
-                                                                    style="aspect-ratio: 1/1; object-fit: cover; width: 50px"
-                                                                    class="rounded-circle ms-1 me-2 align-items-md-center mt-1 mb-1"
+                                                                    style="aspect-ratio: 1/1; object-fit: cover; width: 60px"
+                                                                    class="rounded-circle ms-1 me-2 align-items-md-center mt-2 mb-1"
                                                                   />
                                                                 </div>
                                                                 <div class="col-9">
-                                                                    <div class="row ps-2 pt-2 fs-6" >
-                                                                        Name of Provider
+                                                                    <div class="row ps-2 pt-3 fs-6 pe-1 fw-bold" >
+                                                                        <div class="col text-start">
+                                                                            Name of Provider
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row ps-2" style="font-size:10px">
-                                                                        Attending Provider
+                                                                        <div class="col text-start">
+                                                                            Attending Provider
+                                                                        </div>
                                                                     </div>  
                                                                 </div>
                                                             </div>        
                                                     </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <div class="card p-1 ">
-                                                        8/20/24 <br>
-                                                        1:19pm
+                                                <div class="col-3 d-grid">
+                                                    <div class="card p-1 fw-bold text-center ">
+                                                        <span style="font-size:12px">8/20/24 <br></span>
+                                                        <span style="font-size:16px">12:00 <br> PM</span>
                                                     </div>     
                                                 </div>
                                             </div>
     
                                             <div class="row mt-2">
                                                 <div class="col-12">
-                                                    <div class="card pb-3 pt-0 ps-2 ">
-                                                        Type of Consultation:
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Type of Consultation:</span>
+                                                        [Consultations]
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row mt-2">
-                                                <div class="col-6 pe-0">
-                                                        <div class="card pb-3 pt-0 ps-2 ">
-                                                            Purpose:
+                                                <div class="col-6 pe-0 d-grid">
+                                                        <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                            <span style="font-size:12px">Purpose:</span>
+                                                            [Purposes]
                                                         </div>
                                                 </div>
-                                                <div class="col-6">
-                                                    <div class="card pb-3 pt-0 ps-2">
-                                                        Chief Complaint:
-                                                        
+                                                <div class="col-6 d-grid">
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Chief Complaint</span>   
+                                                        [Complaints]                                          
                                                     </div>
+                                                        
+                                                    <!--Redirect to Consultation Page-->
+                                                    <a href="#" class="stretched-link"></a>
                                                 </div>
                                             </div>   
                                         </div>
@@ -204,59 +220,69 @@
                                         </div>
                                     </div>    
                                 </div> 
+                                <!--Consultation Profile-->
                                 <div class="col-lg-6 text-xl-start text-center pt-3 pe-4">
                                     <div class="row">
                                         <div class="col-11 card rounded-4 p-2 text-start border border-2 bg-success-subtle border-success-subtle">
                                             <div class="row">
-                                                <div class="col-9 pe-0">
+                                                <div class="col-9 pe-0 d-grid">
                                                     <div class="row m-0">
                                                         <div class="card">     
                                                             <div class="row">
                                                                 <div class="col-3 align-content-center ps-1">
                                                                     <img
                                                                     src="https://staff-medisync.web.app/assets/images/placeholders/default-user.png"
-                                                                    style="aspect-ratio: 1/1; object-fit: cover; width: 50px"
-                                                                    class="rounded-circle ms-1 me-2 align-items-md-center mt-1 mb-1"
+                                                                    style="aspect-ratio: 1/1; object-fit: cover; width: 60px"
+                                                                    class="rounded-circle ms-1 me-2 align-items-md-center mt-2 mb-1"
                                                                   />
                                                                 </div>
                                                                 <div class="col-9">
-                                                                    <div class="row ps-2 pt-2 fs-6" >
-                                                                        Name of Provider
+                                                                    <div class="row ps-2 pt-3 fs-6 pe-1 fw-bold" >
+                                                                        <div class="col text-start">
+                                                                            Name of Provider
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row ps-2" style="font-size:10px">
-                                                                        Attending Provider
+                                                                        <div class="col text-start">
+                                                                            Attending Provider
+                                                                        </div>
                                                                     </div>  
                                                                 </div>
                                                             </div>        
                                                     </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <div class="card p-1 ">
-                                                        8/20/24 <br>
-                                                        1:19pm
+                                                <div class="col-3 d-grid">
+                                                    <div class="card p-1 fw-bold text-center ">
+                                                        <span style="font-size:12px">8/20/24 <br></span>
+                                                        <span style="font-size:16px">12:00 <br> PM</span>
                                                     </div>     
                                                 </div>
                                             </div>
     
                                             <div class="row mt-2">
                                                 <div class="col-12">
-                                                    <div class="card pb-3 pt-0 ps-2 ">
-                                                        Type of Consultation:
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Type of Consultation:</span>
+                                                        [Consultations]
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row mt-2">
-                                                <div class="col-6 pe-0">
-                                                        <div class="card pb-3 pt-0 ps-2 ">
-                                                            Purpose:
+                                                <div class="col-6 pe-0 d-grid">
+                                                        <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                            <span style="font-size:12px">Purpose:</span>
+                                                            [Purposes]
                                                         </div>
                                                 </div>
-                                                <div class="col-6">
-                                                    <div class="card pb-3 pt-0 ps-2">
-                                                        Chief Complaint:
-                                                        
+                                                <div class="col-6 d-grid">
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Chief Complaint</span>   
+                                                        [Complaints]                                          
                                                     </div>
+                                                        
+                                                    <!--Redirect to Consultation Page-->
+                                                    <a href="#" class="stretched-link"></a>
                                                 </div>
                                             </div>   
                                         </div>
@@ -266,7 +292,150 @@
                                         </div>
                                     </div>    
                                 </div> 
-                               
+                                <!--Consultation Profile-->
+                                <div class="col-lg-6 text-xl-start text-center pt-3 pe-4">
+                                    <div class="row">
+                                        <div class="col-11 card rounded-4 p-2 text-start border border-2 bg-success-subtle border-success-subtle">
+                                            <div class="row">
+                                                <div class="col-9 pe-0 d-grid">
+                                                    <div class="row m-0">
+                                                        <div class="card">     
+                                                            <div class="row">
+                                                                <div class="col-3 align-content-center ps-1">
+                                                                    <img
+                                                                    src="https://staff-medisync.web.app/assets/images/placeholders/default-user.png"
+                                                                    style="aspect-ratio: 1/1; object-fit: cover; width: 60px"
+                                                                    class="rounded-circle ms-1 me-2 align-items-md-center mt-2 mb-1"
+                                                                  />
+                                                                </div>
+                                                                <div class="col-9">
+                                                                    <div class="row ps-2 pt-3 fs-6 pe-1 fw-bold" >
+                                                                        <div class="col text-start">
+                                                                            Name of Provider
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row ps-2" style="font-size:10px">
+                                                                        <div class="col text-start">
+                                                                            Attending Provider
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>        
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 d-grid">
+                                                    <div class="card p-1 fw-bold text-center ">
+                                                        <span style="font-size:12px">8/20/24 <br></span>
+                                                        <span style="font-size:16px">12:00 <br> PM</span>
+                                                    </div>     
+                                                </div>
+                                            </div>
+    
+                                            <div class="row mt-2">
+                                                <div class="col-12">
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Type of Consultation:</span>
+                                                        [Consultations]
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-6 pe-0 d-grid">
+                                                        <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                            <span style="font-size:12px">Purpose:</span>
+                                                            [Purposes]
+                                                        </div>
+                                                </div>
+                                                <div class="col-6 d-grid">
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Chief Complaint</span>   
+                                                        [Complaints]                                          
+                                                    </div>
+                                                        
+                                                    <!--Redirect to Consultation Page-->
+                                                    <a href="#" class="stretched-link"></a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="col-1 ps-1 text-start">
+                                            <button type="button" class="btn btn-warning mb-1"><i class="fa-solid fa-pen fa-sm" style="min-width: 15px;"></i></button>
+                                            <button type="button" class="btn btn-danger mb-1"><i class="fa-solid fa-trash fa-sm" style="min-width: 15px;"></i></button>
+                                        </div>
+                                    </div>    
+                                </div> 
+                                <!--Consultation Profile-->
+                                <div class="col-lg-6 text-xl-start text-center pt-3 pe-4">
+                                    <div class="row">
+                                        <div class="col-11 card rounded-4 p-2 text-start border border-2 bg-success-subtle border-success-subtle">
+                                            <div class="row">
+                                                <div class="col-9 pe-0 d-grid">
+                                                    <div class="row m-0">
+                                                        <div class="card">     
+                                                            <div class="row">
+                                                                <div class="col-3 align-content-center ps-1">
+                                                                    <img
+                                                                    src="https://staff-medisync.web.app/assets/images/placeholders/default-user.png"
+                                                                    style="aspect-ratio: 1/1; object-fit: cover; width: 60px"
+                                                                    class="rounded-circle ms-1 me-2 align-items-md-center mt-2 mb-1"
+                                                                  />
+                                                                </div>
+                                                                <div class="col-9">
+                                                                    <div class="row ps-2 pt-3 fs-6 pe-1 fw-bold" >
+                                                                        <div class="col text-start">
+                                                                            Name of Provider
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row ps-2" style="font-size:10px">
+                                                                        <div class="col text-start">
+                                                                            Attending Provider
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>        
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 d-grid">
+                                                    <div class="card p-1 fw-bold text-center ">
+                                                        <span style="font-size:12px">8/20/24 <br></span>
+                                                        <span style="font-size:16px">12:00 <br> PM</span>
+                                                    </div>     
+                                                </div>
+                                            </div>
+    
+                                            <div class="row mt-2">
+                                                <div class="col-12">
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Type of Consultation:</span>
+                                                        [Consultations]
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-6 pe-0 d-grid">
+                                                        <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                            <span style="font-size:12px">Purpose:</span>
+                                                            [Purposes]
+                                                        </div>
+                                                </div>
+                                                <div class="col-6 d-grid">
+                                                    <div class="card pb-3 pt-0 ps-2 pe-2">
+                                                        <span style="font-size:12px">Chief Complaint</span>   
+                                                        [Complaints]                                          
+                                                    </div>
+                                                        
+                                                    <!--Redirect to Consultation Page-->
+                                                    <a href="#" class="stretched-link"></a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="col-1 ps-1 text-start">
+                                            <button type="button" class="btn btn-warning mb-1"><i class="fa-solid fa-pen fa-sm" style="min-width: 15px;"></i></button>
+                                            <button type="button" class="btn btn-danger mb-1"><i class="fa-solid fa-trash fa-sm" style="min-width: 15px;"></i></button>
+                                        </div>
+                                    </div>    
+                                </div> 
                                 
                             </div>  
                     </div>
