@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,12 @@
                 top:0;
             }
         }
+       
+        @media (prefers-color-scheme: dark) {
+            .ConItem {
+                color: var(--bs-light-text); 
+            }
+            }
     </style>
 </head>
   <body class="bg-secondary-subtle">
@@ -22,7 +28,7 @@
             <!--Profile Card-->
             <div class="col-xl-4 g-0 pe-xl-2 mb-3">
                 <div class="FixedPosition">
-                    <div class="card p-2 pt-3 rounded-3 d-flex" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <div class="card p-2 pt-3 rounded-4 d-flex" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                         <div class="row pb-3">
                             <div class="col-lg-3 text-center align-content-center ">
                                 <img
@@ -38,28 +44,43 @@
                                     <div class="text-lg-start text-center pb-2 ">Active</div>
                             </div>
                             </div>
-                        <div class="card p-2 m-1 rounded-3" >
+                        <div class="card p-2 m-1 rounded-4 " >
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                         <span class="fw-bold fs-5">Patient Information</span><br>
-                                        <span class="fs-6">Username:</span><br>
-                                        <span class="fs-6">Gender: Male</span><br>
-                                        <span class="fs-6">Birthday: Aug 10, 2002</span><br>
-                                        <span class="fs-6">Age:</span><br>
-                                        <span class="fs-6">Family ID:</span><br>
-                                        <span class="fs-6">UserID:</span><br>
-                                        
-                                    </li>           
+                                        <span class="text-secondary" style="font-size: 12px;">Username:</span>
+                                        <!--Insert Text-->
+                                        <br>
+                                        <span class="text-secondary" style="font-size: 12px;">UserID:</span>
+                                        <!--Insert Text-->
+                                        <br>
+                                        <span class="text-secondary" style="font-size: 12px;">Family ID:</span>
+                                        <!--Insert Text-->
+                                        <br>
+                                        <span class="text-secondary" style="font-size: 12px;">Family Serial:</span>
+                                        <!--Insert Text-->
+                                        <br>
+                                        <span class="text-secondary" style="font-size: 12px;">Birthdate: </span>
+                                        <!--Insert Text-->
+                                        <br>
+                                        <span class="text-secondary" style="font-size: 12px;">Age:</span>
+                                        <!--Insert Text-->
+                                        <br>
+                                        <span class="text-secondary" style="font-size: 12px;">Sex:</span>
+                                        <!--Insert Text-->
+                                        <br>  
+                                    </li>         
                                     <li class="list-group-item">
                                         <span class="fw-bold fs-5">Contact Information</span><br>
-                                        <span class=""><i class="fa-solid fa-phone"></i> 0909090909</span><br>
-                                        <span class=""><i class="fa-regular fa-envelope"></i> unavailable</span><br>
+                                        <span class=""><i class="fa-solid fa-mobile"></i><span class="text-secondary" style="font-size: 12px;"> Mobile:</span> <!--Insert Text--></span><br>
+                                        <span class=""><i class="fa-solid fa-phone"></i><span class="text-secondary" style="font-size: 12px;"> Landline:</span> <!--Insert Text--></span><br>
+                                        <span class=""><i class="fa-regular fa-envelope"></i><span class="text-secondary" style="font-size: 12px;"> Email:</span> <!--Insert Text--></span><br>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="fw-bold fs-5">Contacts</span>
+                                        <span class="fw-bold fs-5">Other Contacts</span>
                                         <div class="border border-2 p-2 rounded-4 mt-3">
-                                            <div class="">Name:</div>
-                                            <div class="">Phone Number:</div>
+                                            <span class=""><span class="text-secondary" style="font-size: 12px;"> Name:</span><!--Insert Text--></span><br>
+                                            <span class=""><span class="text-secondary" style="font-size: 12px;"> Mobile:</span><!--Insert Text--></span><br>
                                         </div>
                                           </li>          
                                     </ul>
@@ -108,11 +129,11 @@
                             <div class="row pe-3">
                                 <!--Consultation Item-->
                                 <div class="col-lg-4 card border border-0 mb-2">
-                                    <div class="btn pe-3 rounded-5 border border-secondary" style="min-height: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+                                    <div class="btn ConItem btn-outline-dark pe-3 rounded-5 border border-secondary" style="min-height: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
                                         <div class="row ps-4 align-content-center">
                                             <div class="col-10 pt-2">
                                                 <div class="row fs-6 text-start"> 
-                                                    <span class="d-inline-block text-truncate ps-0 " style="max-width: auto;">                                                         
+                                                    <span class="d-inline-block text-truncate ps-0 ConItem " style="max-width: auto;">                                                         
                                                         Consultation Form Name
                                                     </span>
                                                 </div>
@@ -129,11 +150,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 card border border-0 mb-2">
-                                    <div class="btn pe-3 rounded-5 border border-secondary" style="min-height: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+                                    <div class="btn ConItem btn-outline-dark pe-3 rounded-5 border border-secondary" style="min-height: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
                                         <div class="row ps-4 align-content-center">
                                             <div class="col-10 pt-2">
                                                 <div class="row fs-6 text-start"> 
-                                                    <span class="d-inline-block text-truncate ps-0 " style="max-width: auto;">                                                         
+                                                    <span class="d-inline-block text-truncate ps-0 ConItem " style="max-width: auto;">                                                         
                                                         Consultation Form Name
                                                     </span>
                                                 </div>
@@ -150,11 +171,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 card border border-0 mb-2">
-                                    <div class="btn pe-3 rounded-5 border border-secondary" style="min-height: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+                                    <div class="btn ConItem btn-outline-dark pe-3 rounded-5 border border-secondary" style="min-height: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
                                         <div class="row ps-4 align-content-center">
                                             <div class="col-10 pt-2">
                                                 <div class="row fs-6 text-start"> 
-                                                    <span class="d-inline-block text-truncate ps-0 " style="max-width: auto;">                                                         
+                                                    <span class="d-inline-block text-truncate ps-0 ConItem " style="max-width: auto;">                                                         
                                                         Consultation Form Name
                                                     </span>
                                                 </div>
